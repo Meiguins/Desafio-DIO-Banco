@@ -31,24 +31,11 @@ public class Conta implements IConta{
         return this.agencia;
     }
 
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
-    }
-
     public int getNumero() {
         return this.numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public double getSaldo() {
         return this.saldo;
     }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
 }
