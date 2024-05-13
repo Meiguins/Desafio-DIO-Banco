@@ -8,7 +8,7 @@ public abstract class Conta implements IConta{
     protected Cliente cliente;
 
     @Override
-    public void sacar(double valor){
+    public void sacar(double valor) {
         saldo -= valor;
     }
 
@@ -21,6 +21,9 @@ public abstract class Conta implements IConta{
     public void transferir(double valor, Conta contaDestino){
         this.sacar(valor);
         contaDestino.depositar(valor);
+    }
+    public double verificarSaldo() {
+        return saldo;
     }
 
     protected void imrimirInfosComuns(){
